@@ -1,0 +1,91 @@
+/* Mobile first styles */
+header {
+  padding: 0.6rem;
+  background-color: #526eec;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Estilos del logo */
+.logo {
+  width: 50px; /* Ajusta el tamaño del logo */
+  border-radius: 8px;
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 1024px) {
+  .logo {
+    width: 60px; /* Ajusta el tamaño del logo en pantallas grandes */
+  }
+}
+
+.navbar {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  position: relative;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  display: none;
+  flex-direction: column;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* Laptop and larger screen styles */
+@media (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin-left: 2rem;
+    margin-bottom: 0;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
