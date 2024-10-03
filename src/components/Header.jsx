@@ -10,10 +10,8 @@ const Header = () => {
 
   return (
     <header>
+      <img src="../public/images/logo.png" alt="logo" className="logo" />
       <nav className="navbar">
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <li>
             <a href="#inicio">Inicio</a>
@@ -28,8 +26,9 @@ const Header = () => {
             <a href="#contactame">Contáctame</a>
           </li>
         </ul>
-
-        <img src="../public/images/logo.png" alt="logo" className="logo" />
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
       </nav>
     </header>
   );

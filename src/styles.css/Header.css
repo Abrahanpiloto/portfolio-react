@@ -1,29 +1,32 @@
 /* Mobile first styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 header {
+  /* border: 2px solid red; */
   padding: 0.6rem;
   background-color: #526eec;
   color: white;
-  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Estilos del logo */
 .logo {
-  width: 50px; /* Ajusta el tamaño del logo */
+  width: 50px;
   border-radius: 8px;
-}
-
-/* Para pantallas más grandes */
-@media (min-width: 1024px) {
-  .logo {
-    width: 60px; /* Ajusta el tamaño del logo en pantallas grandes */
-  }
 }
 
 .navbar {
   display: flex;
   /* flex-direction: column; */
   align-items: flex-start;
-  position: relative;
+  /* position: relative; */
   justify-content: space-between;
 }
 
@@ -39,6 +42,7 @@ header {
   list-style: none;
   padding-left: 0;
   margin-top: 1rem;
+  margin-right: 1.5rem;
   display: none;
   flex-direction: column;
 }
@@ -65,10 +69,24 @@ header {
 
 /* Laptop and larger screen styles */
 @media (min-width: 1024px) {
+  .logo {
+    width: 60px;
+    margin-left: 2rem;
+  }
+  header {
+    padding: 0.6rem;
+    background-color: #526eec;
+    color: white;
+    display: flex;
+    /* border: 2px solid red; */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    /* border: 2px solid black; */
+    padding: 8px;
+    width: 30rem;
   }
 
   .menu-toggle {
@@ -78,11 +96,8 @@ header {
   .nav-links {
     display: flex;
     flex-direction: row;
-  }
-
-  .nav-links li {
-    margin-left: 2rem;
-    margin-bottom: 0;
+    /* border: 2px solid wheat; */
+    gap: 2rem;
   }
 
   .nav-links li a {
