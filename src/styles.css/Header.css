@@ -4,6 +4,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 header {
@@ -14,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 
 /* Estilos del logo */
@@ -68,7 +70,7 @@ header {
 }
 
 /* Laptop and larger screen styles */
-@media (min-width: 1024px) {
+@media (min-width: 850px) {
   .logo {
     width: 60px;
     margin-left: 2rem;

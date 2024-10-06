@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <img src="../public/images/logo.png" alt="logo" className="logo" />
+      <img src="/images/logo.png" alt="logo" className="logo" />
       <nav className="navbar">
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
           <li>

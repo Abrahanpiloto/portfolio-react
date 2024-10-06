@@ -1,0 +1,88 @@
+/* Mobile first styles */
+.aboutme {
+  height: 100vh;
+  background-color: #22293b;
+  padding-top: 1rem;
+  overflow-x: hidden;
+}
+
+.container-card {
+  border: 2px solid white;
+  width: 85%;
+  height: 95%;
+  margin: 0 auto;
+  background-color: #11182a;
+  border-radius: 8px;
+  box-shadow: 0 5px 13px rgba(255, 255, 255, 0.5);
+}
+
+.photo {
+  width: 100%;
+}
+
+.container-testimonio {
+  color: white;
+  padding: 8px;
+  /* border: 2px solid red; */
+  margin-top: 0.1rem;
+}
+.container-testimonio h3 {
+  color: #526eec;
+  font-size: 30px;
+}
+.container-testimonio span {
+  color: #526eec;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.container-testimonio p {
+  font-family: "Roboto", monospace;
+  font-size: 15px;
+}
+
+.container-testimonio h4 {
+  color: #526eec;
+  font-size: 20px;
+  margin-top: 0.8rem;
+}
+
+.subcontainer {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Laptop and larger screen styles */
+@media (min-width: 1024px) {
+  .aboutme {
+    height: 100vh;
+    padding-top: 8rem;
+  }
+  .container-card {
+    display: flex;
+    border: 2px solid white;
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    background-color: #11182a;
+    border-radius: 8px;
+  }
+  .photo {
+    width: 50%;
+  }
+  .container-photo {
+    height: 100%;
+    /* border: 2px solid red; */
+    width: 120%;
+  }
+
+  .photo {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 0 0 15px;
+  }
+  .container-testimonio {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+}
