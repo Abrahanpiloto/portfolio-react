@@ -3,13 +3,14 @@
   height: 100vh;
   background-color: #22293b;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   overflow-x: hidden;
 }
 
 .container-card {
   border: 2px solid white;
   width: 85%;
-  height: 95%;
+  height: 99%;
   margin: 0 auto;
   background-color: #11182a;
   border-radius: 8px;
@@ -28,7 +29,7 @@
 }
 .container-testimonio h3 {
   color: #526eec;
-  font-size: 30px;
+  font-size: 28px;
 }
 .container-testimonio span {
   color: #526eec;
@@ -37,7 +38,7 @@
 }
 
 .container-testimonio p {
-  font-family: "Roboto", monospace;
+  font-family: "Roboto";
   font-size: 15px;
 }
 

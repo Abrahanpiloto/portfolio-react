@@ -1,8 +1,10 @@
+import "../styles.css/Projects.css";
+
 export const Projects = () => {
   return (
     <section className="projects-section">
       <h2 className="title-projects">Mis trabajos y proyectos personales.</h2>
-      <div className="projects -container"></div>
+      <div className="projects-container"></div>
       {/* <--Card Landing page--> */}
       <div className="card">
         <div className="image-box">

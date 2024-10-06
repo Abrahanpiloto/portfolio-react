@@ -1,0 +1,37 @@
+.contact-section {
+  background-color: #303841;
+  color: #526eec;
+  height: 100vh;
+}
+
+.contact-title p {
+  color: white;
+  text-align: center;
+}
+
+.contact-title span {
+  color: #526eec;
+}
+
+.contact-title h1 {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.contact-icons {
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  color: white;
+  background-color: #303841;
+}
+
+.redes {
+  background-color: #303841;
+  color: white;
+}

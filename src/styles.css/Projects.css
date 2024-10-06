@@ -1,0 +1,54 @@
+/* Mobile first styles */
+* {
+  font-family: "Roboto";
+}
+
+.title-projects {
+  margin: 0 auto;
+  /* border: 2px red solid; */
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.projects-section {
+  background-color: #45567d;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.projects-container {
+  /* width: 21rem; */
+  /* margin: 0 auto; */
+  /* border: 2px solid green; */
+}
+
+img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card {
+  margin: 0 auto;
+  width: 19rem;
+  /* border: 2px solid red; */
+  background-color: #526eec;
+  border-radius: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-details p {
+  padding: 1rem;
+  text-align: center;
+}
+
+.ir {
+  padding-bottom: 1rem;
+}
+.ir a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 6.5rem;
+}
