@@ -5,8 +5,10 @@
 }
 
 .contact-title p {
+  margin-top: 2rem;
   color: white;
   text-align: center;
+  font-size: 1rem;
 }
 
 .contact-title span {
@@ -16,12 +18,14 @@
 .contact-title h1 {
   padding-top: 6rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .contact-icons {
   /* border: 2px solid red; */
   width: 80%;
   margin: 0 auto;
+  margin-top: 3rem;
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;

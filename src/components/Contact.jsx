@@ -33,7 +33,7 @@ export const Contact = () => {
           <p>Linkedin</p>
         </button>
         <button className="redes">
-          <a href="micv.pdf" download="micv.pdf" target="_blank">
+          <a href="miCv.pdf" download="Abrahan_Piloto_CV.pdf" target="_blank">
             <img src="images/icon-cv.png" alt="cv" />
           </a>
           <p>Descargar CV</p>
