@@ -39,3 +39,18 @@
   background-color: #303841;
   color: white;
 }
+
+/* Laptop and larger screen styles */
+@media (min-width: 1024px) {
+  .contact-section {
+    height: 90vh;
+  }
+  .contact-icons {
+    /* border: 2px solid red; */
+    /* margin-top: 14rem; */
+  }
+
+  .contact-title {
+    padding-top: 5rem;
+  }
+}

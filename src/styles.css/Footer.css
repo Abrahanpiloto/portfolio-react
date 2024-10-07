@@ -14,3 +14,10 @@ footer span {
   font-family: "Satisfy", cursive;
   font-size: 1.5rem;
 }
+
+/* Laptop and larger screen styles */
+@media (min-width: 1024px) {
+  footer {
+    padding: 0.3rem;
+  }
+}

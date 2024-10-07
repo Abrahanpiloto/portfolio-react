@@ -2,7 +2,7 @@ import "../styles.css/Aboutme.css";
 
 export const Aboutme = () => {
   return (
-    <section className="aboutme">
+    <section className="aboutme" id="acerca-de-mi">
       <div className="container-card">
         <div className="container-photo">
           <img src="/images/blancoynegro.jpg" alt="Mi Foto" className="photo" />

@@ -72,11 +72,11 @@ header {
 /* Laptop and larger screen styles */
 @media (min-width: 850px) {
   .logo {
-    width: 60px;
+    width: 50px;
     margin-left: 2rem;
   }
   header {
-    padding: 0.6rem;
+    padding: 0.2rem;
     background-color: #526eec;
     color: white;
     display: flex;

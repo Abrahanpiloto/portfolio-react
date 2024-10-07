@@ -18,12 +18,6 @@
   padding-bottom: 2rem;
 }
 
-.projects-container {
-  /* width: 21rem; */
-  /* margin: 0 auto; */
-  /* border: 2px solid green; */
-}
-
 img {
   width: 100%;
   border-radius: 8px 8px 0 0;
@@ -51,4 +45,44 @@ img {
   color: white;
   text-decoration: none;
   margin-left: 6.5rem;
+}
+
+/* Laptop and larger screen styles */
+@media (min-width: 1024px) {
+  .projects-container {
+    display: flex;
+    border: 2px solid red;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 15rem;
+    height: 18rem;
+    /* border: 2px solid white; */
+  }
+
+  .image-box {
+    height: 10rem;
+    /* border: 2px solid green; */
+  }
+  .image-box img {
+    /* width: 100%; */
+    height: 100%;
+    /* border: 2px solid black; */
+  }
+  .profile-details p {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+  }
+
+  .ir a {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    font-size: 0.8rem;
+    /* border: 2px solid red; */
+    font-weight: bold;
+  }
 }

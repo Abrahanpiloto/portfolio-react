@@ -1,7 +1,7 @@
 import "../styles.css/Welcome.css";
 export const Welcome = () => {
   return (
-    <section className="welcome">
+    <section className="welcome" id="inicio">
       <div className="presentation">
         <div className="presentation-name">
           <h1 className="name">
