@@ -51,7 +51,7 @@ img {
 @media (min-width: 1024px) {
   .projects-container {
     display: flex;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 70%;
     margin: 0 auto;
     flex-wrap: wrap;
