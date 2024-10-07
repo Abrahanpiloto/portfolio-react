@@ -9,6 +9,9 @@
 
 header {
   /* border: 2px solid red; */
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   padding: 0.6rem;
   background-color: #526eec;
   color: white;
