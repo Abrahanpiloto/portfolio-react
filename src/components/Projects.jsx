@@ -1,12 +1,45 @@
 import "../styles.css/Projects.css";
+import { useEffect, useRef } from "react";
 
 export const Projects = () => {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.2 } // El porcentaje del card que debe estar visible para activar la animación
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) {
+        observer.observe(card);
+      }
+    });
+
+    // Cleanup cuando el componente se desmonta
+    return () => {
+      cardsRef.current.forEach((card) => {
+        if (card) {
+          observer.unobserve(card);
+        }
+      });
+    };
+  }, []);
+
   return (
     <section className="projects-section" id="mis-proyectos">
       <h2 className="title-projects">Mis trabajos y proyectos personales.</h2>
       <div className="projects-container">
         {/* <--Card Landing page--> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[0] = el)}>
           <div className="image-box">
             <img src="images/landingpage.png" alt="clima" />
           </div>
@@ -27,7 +60,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- Card  Autenticacion-Firebase--> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[1] = el)}>
           <div className="image-box">
             <img src="images/autenticationfirebase.png" alt="autenticacion" />
           </div>
@@ -48,7 +81,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- Card Weather --> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[2] = el)}>
           <div className="image-box">
             <img src="images/clima.png" alt="clima" />
           </div>
@@ -69,7 +102,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- Card Bills --> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[3] = el)}>
           <div className="image-box">
             <img src="images/gastos.png" alt="clima" />
           </div>
@@ -90,7 +123,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- Card Loan --> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[4] = el)}>
           <div className="image-box">
             <img src="images/prestamos.png" alt="clima" />
           </div>
@@ -111,7 +144,7 @@ export const Projects = () => {
           </div>
         </div>
         {/* <!-- Card Criptocurrencies --> */}
-        <div className="card">
+        <div className="card" ref={(el) => (cardsRef.current[5] = el)}>
           <div className="image-box">
             <img src="images/cripto.png" alt="clima" />
           </div>

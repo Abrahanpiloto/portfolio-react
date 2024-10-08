@@ -29,7 +29,6 @@
   gap: 3rem;
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
   color: white;
   background-color: #303841;
@@ -45,12 +44,13 @@
   .contact-section {
     height: 90vh;
   }
-  .contact-icons {
-    /* border: 2px solid red; */
-    /* margin-top: 14rem; */
-  }
 
   .contact-title {
     padding-top: 5rem;
+  }
+
+  .redes:hover {
+    transform: translateY(-15px);
+    transition: transform 0.3s ease;
   }
 }
