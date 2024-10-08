@@ -15,7 +15,7 @@ export const Projects = () => {
           }
         });
       },
-      { threshold: 0.2 } // El porcentaje del card que debe estar visible para activar la animación
+      { threshold: 0.5 } // El porcentaje del card que debe estar visible para activar la animación
     );
 
     cardsRef.current.forEach((card) => {
