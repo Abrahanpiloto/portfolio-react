@@ -1,5 +1,5 @@
 import "../styles.css/Welcome.css";
-import { motion } from "framer-motion";
+
 export const Welcome = () => {
   return (
     <section className="welcome" id="inicio">
